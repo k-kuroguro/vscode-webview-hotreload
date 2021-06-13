@@ -3,9 +3,7 @@ import * as fs from 'fs';
 import { Config } from './config';
 
 export function activate(context: vscode.ExtensionContext) {
-   const config: Config = Config.getInstance();
-
-   if (process.env.VSCODE_WEBVIEW_HOTRELOAD_IS_DEBUGGING !== 'true' || !config.watchFolder) {
+   if (process.env.VSCODE_WEBVIEW_HOTRELOAD_IS_DEBUGGING !== 'true') {
       return;
    }
 
@@ -13,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
    watcher.watch();
 
    context.subscriptions.push(
-      config.setListener(),
+      Config.getInstance().setListener(),
       watcher
    );
 
