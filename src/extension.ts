@@ -3,7 +3,7 @@ import { Config } from './config';
 import { Watcher } from './watcher';
 
 export function activate(context: vscode.ExtensionContext) {
-   if (process.env.VSCODE_WEBVIEW_HOTRELOAD_IS_DEBUGGING !== 'true') {
+   if (process.env.IS_EXTENSION_DEBUGGING !== 'true') {
       return;
    }
 

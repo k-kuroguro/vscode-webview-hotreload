@@ -4,21 +4,21 @@ VSCode extension for enabling hot reload when coding webview.
 ![demo](./demo.gif)
 
 # How to use
-1. Set environment variable `VSCODE_WEBVIEW_HOTRELOAD_IS_DEBUGGING` as `true` to extension's `launch.json` wanted to use hot reload.
+1. Set environment variable `IS_EXTENSION_DEBUGGING` as `true` to extension's `launch.json` wanted to use hot reload.
 ```diff
       {
          "name": "Run Extension",
          "type": "extensionHost",
          "request": "launch",
          "args": [
-            "--extensionDevelopmentPath=${workspaceFolder}"
+            "--extensionDevelopmentPath=${workspacIS_EXTENSION_DEBUGGINGeFolder}"
          ],
          "outFiles": [
             "${workspaceFolder}/dist/**/*.js"
          ],
          "preLaunchTask": "${defaultBuildTask}",
 +         "env": {
-+            "VSCODE_WEBVIEW_HOTRELOAD_IS_DEBUGGING": "true"
++            "IS_EXTENSION_DEBUGGING": "true"
 +         }
       },
 ```
