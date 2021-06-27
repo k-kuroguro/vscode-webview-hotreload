@@ -23,7 +23,7 @@ VSCode extension for enabling hot reload when coding webview.
       },
 ```
 2. Set folder of webview code as `vscode-webview-hotreload.watchFolder`.
-   (ex. `"vscode-webview-hotreload.watchFolder": "c:\\Users\\81701\\Desktop\\vscode-webview-svelte-sample\\dist"`)
+   (ex. `"vscode-webview-hotreload.watchFolder": "c:\\User\\Desktop\\ExtensionProject"`)
 
 3. Start debug session and active webview.
 4. If you changed webview code, webview will reload.
