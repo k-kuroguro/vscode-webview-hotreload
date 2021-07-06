@@ -24,12 +24,6 @@
    ],
    "main": "./dist/extension.js",
    "contributes": {
-      "commands": [
-         {
-            "command": "vscode-webview-hotreload.helloWorld",
-            "title": "Hello World"
-         }
-      ],
       "configuration": [
          {
             "title": "VSCode Webview HotReload Configuration",
