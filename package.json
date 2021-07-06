@@ -3,7 +3,7 @@
    "displayName": "vscode-webview-hotreload",
    "publisher": "k-kuroguro",
    "description": "VSCode extension for enabling hot reload when coding webview.",
-   "version": "0.0.2",
+   "version": "0.0.3",
    "engines": {
       "vscode": "^1.57.0"
    },
