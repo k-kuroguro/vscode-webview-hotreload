@@ -26,7 +26,7 @@
    "contributes": {
       "configuration": [
          {
-            "title": "VSCode Webview HotReload Configuration",
+            "title": "VSCode Webview HotReload",
             "type": "object",
             "properties": {
                "vscode-webview-hotreload.watchFolder": {
